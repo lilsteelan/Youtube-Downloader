@@ -1,3 +1,12 @@
 # Youtube-Downloader
 
-This is a small project that uses the pytube library to download youtube videos in 1080p
+Built in flask, requirements:
+flask
+flask_session
+os
+json
+pytube
+requests
+bs4
+glob
+pathlib
