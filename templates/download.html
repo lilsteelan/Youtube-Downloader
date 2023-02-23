@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Downloader</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{url_for('static',filename='style.css') }}"/>
+</head>
+<body>
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+  ></script>
+
+  <script>
+    function redirect(){
+        window.location.href = '{{ redirect_url }}';
+    }
+  </script>
+      <!-- <script src="{{url_for('static', filename='/builder.js')}}"></script> -->
+    </head>
+    <section>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        
+    <div class="box">
+        <div class="square" style="--i:0;"></div>
+        <div class="square" style="--i:1;"></div>
+        <div class="square" style="--i:2;"></div>
+        <div class="square" style="--i:3;"></div>
+        <div class="square" style="--i:4;"></div>
+            
+        </div>
+        <div class="secondaryContainer">
+            <div class="downloadSection">
+                <h2><strong>Successfully Converted!</strong></h2>
+                <div class="preview">
+                    <!--Preview here-->    
+                </div>
+                    <a href=" {{url_for('download')}} "  href="index.html" ><input type="submit" value="Download"></a>
+                    <a href=" {{url_for('home')}} "  href="index.html" ><input style = "background: rgb(0, 187, 255);" type="submit" value="Back home"></a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="form" >
+                <h2><strong>Youtube Downloader</strong></h2>
+                <form method>
+                    <div class="inputBox">
+                        <input type="text" name="link" id="link" placeholder="Youtube Link">
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" value="Convert">
+                    </div>
+                </form>     
+                <h5>Made by Stellan Lindrud</h5>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+</body>
+</html>
