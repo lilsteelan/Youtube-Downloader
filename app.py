@@ -19,7 +19,7 @@ config = {
 
 
 app = Flask(__name__)
-app.config["SECRET_KEY"] = "47C61A0FA8738BA77308A8A600F88E4B"
+app.config["SECRET_KEY"] = "something secret"
 app.config['UPLOAD_FOLDER']='videos'
 app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
